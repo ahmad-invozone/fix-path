@@ -2,7 +2,7 @@
 const shellPath = require('shell-path');
 
 module.exports = () => {
-	if (process.platform !== 'darwin') {
+	if (process.platform === 'win32') {
 		return;
 	}
 
